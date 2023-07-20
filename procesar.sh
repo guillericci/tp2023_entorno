@@ -12,9 +12,9 @@ function aplicar_transformacion() {
   done
 }
 
-if [ ! -f "*.jpg" ]; then
-  echo "Error: No se encontraron imagenes para procesar."
-  exit 1
-fi
-
-aplicar_transformacion
+  if ls | grep -qE '\.jpg$' ; then
+    aplicar_transformacion
+  else
+    echo "Error: No se encontraron imagenes para procesar."
+    exit 1
+  fi
