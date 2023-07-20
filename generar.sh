@@ -12,12 +12,12 @@ function descargar_imagenes() {
   done
 }
 
-function comp_y_gen_checksum() {
+function comprimir_y_generar_checksum() {
   tar -czvf imagenes.tar.gz *.jpg
   md5sum imagenes.tar.gz > imagenes_checksum.txt
 }
 
-if [ $# == 1 ] # Checkeo el número de argumentos
+if [ $# == 1 ] # Checkeo el numero de argumentos
 then
   cantidad_imagenes=$1
 else
@@ -26,4 +26,4 @@ else
 fi
 
 descargar_imagenes $cantidad_imagenes
-comp_y_gen_checksum
+comprimir_y_generar_checksum
