@@ -11,6 +11,7 @@ function aplicar_transformacion() {
     fi
   done
 }
+
   if ls | grep -qE '\.jpg$' ; then
     aplicar_transformacion
   else

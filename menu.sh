@@ -23,6 +23,15 @@ function menu_descomprimir() {
 
 function menu_comprimir() {
     ./comprimir.sh
+    status=$?
+    if [ $status -eq 1 ]; then
+        echo "Error: El script ./comprimir.sh no se ejecuto correctamente."
+    else
+        if [ ! -d "/Salida" ]; then
+            mkdir /Salida
+        fi
+        cp EdP_archivos_generados.tar.gz ./Salida/EdP_archivos_generados.tar.gz
+    fi
 }
 
 while true
