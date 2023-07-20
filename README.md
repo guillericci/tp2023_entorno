@@ -12,7 +12,7 @@
 
 Para crear la imagen de Docker, ejecute el siguiente comando:
 
-    docker build -t <nombre_imagen>
+    docker build -t <nombre_imagen> .
   
   
 Para ejecutar la aplicación en el contenedor Docker,puede ejecutar:
