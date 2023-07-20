@@ -15,9 +15,9 @@ Para crear la imagen de Docker, ejecute el siguiente comando:
     docker build -t <nombre_imagen>
   
   
-Para ejecutar la aplicación el contenedor Docker, puede utilizar el archivo `ejecutar.bat` o `ejecutar.sh` dependiendo del sistema operativo que utilice.  O si gusta, puede ejecutar:
+Para ejecutar la aplicación en el contenedor Docker,puede ejecutar:
 
-    docker run -it -v "$PWD:/App" ProcesadorImagenes
+    docker run -it -v "$PWD:/App" <ProcesadorImagenes>
 
 Esto montará el directorio actual en el contenedor y ejecutará la aplicación.
 
