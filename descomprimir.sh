@@ -13,7 +13,7 @@ function verificar_sum() {
   fi
 }
 
-if [ $# -eq 2 ] # Checkeo el número de argumentos
+if [ $# -eq 2 ] # Checkeo el numero de argumentos
 then 
   comprimido=$1
   checksum=$2
