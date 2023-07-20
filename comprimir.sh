@@ -16,6 +16,11 @@ function comprimir_archivos() {
   tar -czvf EdP_archivos_generados.tar.gz EdP_lista_imagenes.txt EdP_lista_nombres_validos.txt EdP_total_nombres_con_fin_a.txt *.jpg
 }
 
+if [ ! -f "*.jpg" ]; then
+  echo "Error: No se encontraron imagenes para procesar."
+  exit 1
+fi
+
 lista_imagenes
 lista_nombres_validos
 total_nombres_con_a
