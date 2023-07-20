@@ -2,7 +2,7 @@
 
 function descargar_imagenes() {
   cantidad_imagenes=$1
-  nombres=($(curl -s https://raw.githubusercontent.com/adalessandro/EdP-2023-TP-Final/main/dict.csv | cut -d ',' -f1)) 
+  nombres=($(curl -s https://raw.githubusercontent.com/adalessandro/EdP-2023-TP-Final/main/dict.csv | tr ' ' '_' | cut -d ',' -f1)) 
   for ((i=1; i<=cantidad_imagenes; i++))
   do
     nombre_persona=${nombres[$RANDOM % ${#nombres[@]}]}
