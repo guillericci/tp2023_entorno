@@ -24,4 +24,3 @@ fi
 
 verificar_sum "$comprimido" "$checksum"
 tar -xzvf "$comprimido" && echo "Descomprimido exitosamente."
-

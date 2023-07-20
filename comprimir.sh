@@ -26,3 +26,4 @@ else
   echo "Error: No se encontraron imagenes para procesar."
   exit 1
 fi
+
