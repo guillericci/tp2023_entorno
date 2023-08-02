@@ -7,7 +7,10 @@
 - Perna, Nahuel
 - Ricci, Guillermo
 
+### Inicializar clonando el repositorio
 
+    git clone https://github.com/guillericci/tp2023_entorno.git
+  
 ### Instrucciones para Docker
 
 Para crear la imagen de Docker, ejecute el siguiente comando:
